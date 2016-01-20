@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<html>
+  <head>
+    <title>Welcome to the NILM web interface</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <script type = "text/javascript">
+ 
+      function XmlController(i) {
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            ImageController(xmlhttp, i);
+        }
+	};
+      xmlhttp.open("GET", "data.xml", true);
+      xmlhttp.send();
+}
+
+
+
+
+ function ImageController(xml, i) {
+ var xmlDoc = xml.responseXML;
+ 
+ 
+ 
+              if( xmlDoc.getElementsByTagName("state")[0].childNodes[0].nodeValue == 0) {
+		document.getElementById("img").src = images[0];
+		}
+	      else {
+		document.getElementById("img").src = images[1];
+              }
+          }
+
+         
+
+          function startTimer() {
+              setInterval(XmlController(0), 15000);
+          }
+          
+
+          var images = [], x = -1;
+          images[0] = "https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ";
+          images[1] = "https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDalNRSHNkOTdrSXc";   
+ 
+    
+         
+          
+          
+
+
+      </script>
+      
+      
+  </head>
+  
+  <body onload = "startTimer()" bgcolor text>
+
+  <div class="menu">
+  <div class="menubox"><a href="/">Home</a></div>
+  <div class="menubox"><a href="stats.shtml">Network statistics</a></div>
+  <div class="menubox"><a href="tcp.shtml">Network connections</a></div>
+  <div class="menubox"><a href="graf.html">Power statistics</a></div>
+  <br>
+  </div>
+
+  <div>
+  
+  <div class="contentblock">
+  
+  
+    <h3>Device 1<h3>
+     <img id="img" src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133">
+ 
+  </div>
+  
+  
+  
+  <div class="contentblock">
+  
+    <h3>Device 2<h3>
+    <img src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133"> 
+  </div>
+ 
+  <div class="contentblock">
+  
+    <h3>Device 3<h3>
+    <img src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133">   
+  </div>  
+ 
+  </div>
+  
+<div id='showCD'></div>
+
+
+XmlController(0);
+
+
+  <button type="button" onclick="XmlController(0)">Update</button>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to the NILM web interface</title>
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    
+    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+       
+    <script type = "text/javascript">
+          function ImageController() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+         
+
+          function startTimer() {
+              setInterval(ImageController, 15000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ";
+          images[1] = "https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDalNRSHNkOTdrSXc";
+          
+      </script>
+      
+      
+  </head>
+  
+  <body onload = "startTimer()" bgcolor text>
+
+  <div class="menu">
+  <div class="menubox"><a href="/">Home</a></div>
+  <div class="menubox"><a href="stats.shtml">Network statistics</a></div>
+  <div class="menubox"><a href="tcp.shtml">Network connections</a></div>
+  <div class="menubox"><a href="graf.html">Power statistics</a></div>
+  <br>
+  </div>
+
+  <div>
+  
+  <div class="contentblock">
+  
+  
+    <h3>Device 1<h3>
+    <img id="img" src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133"> 
+  </div>
+  
+  
+  
+  <div class="contentblock">
+  
+    <h3>Device 2<h3>
+    <img src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133"> 
+  </div>
+ 
+  <div class="contentblock">
+  
+    <h3>Device 3<h3>
+    <img src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDNE43UjRCaGItajQ" alt="lamp on" height="150" width="133">   
+  </div>  
+ 
+  </div>
+  
+  </body>
+</html>

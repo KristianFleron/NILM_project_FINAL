@@ -1,0 +1,88 @@
+h1 {
+  padding: 10px;
+  text-align: center;
+  font-size: 30pt;
+  font-family: arial,helvetica;
+  font-weight: bold;
+ 
+}
+h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 15pt;
+  font-family: arial,helvetica;
+  font-weight: bold;
+ 
+}
+.pTime {
+  left: -10px;
+  top: 220px;
+  position: absolute;
+ 
+  font-size: 18pt;
+  	-ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
+body {
+  background-color: #fffeec;
+  color: black;
+  font-size: 8pt;
+  font-family: arial,helvetica;
+}
+.menu {
+  border: 1px solid ;
+  margin: 4px;
+  padding: 2px;
+  width: 99%;
+  background-color: #fffcd2;
+  text-align: left;
+  font-size: 15pt;
+  font-family: arial,helvetica;
+}
+div.menubox {
+  border:  none;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.contentblock {
+  border: 1px dotted ;
+  margin: 4px;
+  padding: 2px;
+  width: 30%;
+  background-color: white;
+  font-size: 8pt;
+  font-family: arial,helvetica;
+  float: left;
+  text-align: center;
+}
+p.intro {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 10pt;
+  font-family: arial,helvetica;
+}
+p.clink {
+  font-size: 12pt;
+  font-family: courier,monospace;
+  text-align: center;
+}
+p.clink9 {
+  font-size: 9pt;
+  font-family: courier,monospace;
+  text-align: center;
+}
+p {
+  padding-left: 10px;
+}
+p.right {
+  text-align: right;
+}
+name {
+  padding: 10px;
+  text-align: center;
+  font-size: 14pt;
+  font-family: arial,helvetica;
+  font-weight: bold;
+}

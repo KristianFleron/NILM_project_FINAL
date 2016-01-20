@@ -1,0 +1,17 @@
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armproc.dll" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armjlink2.dll" 
+
+"C:\Users\frede\owncloud_new\Engineering\Electronics\31070 - Hands-on mikrocontroller\workspace\uip_webserver_NEW\Flash Debug\Exe\uip_demo.out" 
+
+--plugin "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\bin\armbat.dll" 
+
+--device_macro "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\debugger\NXP\LPC24xx.dmac" 
+
+--macro "C:\Users\frede\owncloud_new\Engineering\Electronics\31070 - Hands-on mikrocontroller\workspace\uip_webserver_NEW\config\lpc2478.mac" 
+
+--flash_loader "C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.3\arm\config\flashloader\NXP\FlashNXPLPC512K2.board" 
+
+
+
+

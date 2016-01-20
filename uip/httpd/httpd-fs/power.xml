@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<item id='01'>
+		<power>
+		%! power_stats
+		</power>
+		<time>
+		%! power_stats
+		</time>
+	</item>
+	<item id='02'>
+		<power>
+		%! power_stats
+		</power>
+		<time>
+		%! power_stats
+		</time>
+	</item>
+	<item id='03'>
+		<power>
+		%! power_stats
+		</power>
+		<time>
+		%! power_stats
+		</time>
+	</item>
+	<item id='04'>
+		<power>
+		%! power_stats
+		</power>
+		<time>
+		%! power_stats
+		</time>
+	</item>
+	<item id='05'>
+		<power>
+		%! power_stats
+		</power>
+		<time>
+		%! power_stats
+		</time>
+	</item>
+</data>

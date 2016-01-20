@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power chart</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDWUhLX05EbjQ4UmM"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="https://drive.google.com/uc?export=download&id=0B8wFoaP-uQuDZVI2Y0I0dnNnMTA"></script>
+	<script>
+		var myLineChart;
+		function doOnLoad() {
+			myLineChart =  new dhtmlXChart({
+				view:"line",
+				container:"chart",
+				value:"#power#",
+				item:{
+					borderColor: "#1293f8",
+					color: "#ffffff"
+				},
+				line:{
+					color:"#1293f8",
+					width:3
+				},
+				xAxis:{
+					template:"#time#"
+				},
+				offset:0,
+				yAxis:{
+					start:0,
+					end:100,
+					step:10,
+					template:function(obj){
+						return (obj%20?"":obj)
+					}
+				}
+			});
+			myLineChart.load("power.xml");
+		}
+	</script>
+</head>
+<body onload="doOnLoad();">
+	<h1>Power graf</h1>
+	<div class="pTime" <h2>Power</h2></div>
+	<div id="chart" style="width:600px;height:250px;border:1px solid #A4BED4;"></div>
+	<div id="tTime" <h2>Time</h2></div>
+
+</body>
+</html>
